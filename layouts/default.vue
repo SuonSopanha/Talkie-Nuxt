@@ -1,7 +1,8 @@
 <template>
+
     <div class="flex flex-col min-h-screen">
         <header class="bg-[#7AB2B2] text-text-color">
-            <nav class="fixed top-0 left-0 w-full z-50 bg-white border-b backdrop-blur-lg bg-opacity-80">
+            <nav class="fixed top-0 left-0 w-full z-50 bg-slate-50 border-b backdrop-blur-lg bg-opacity-80">
                 <div class="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8 ">
                     <div class="relative flex h-16 justify-between">
                         <div class="flex flex-1 justify-start items-center space-x-2">
