@@ -3,10 +3,23 @@
         <div class="w-full md:w-1/4 bg-gray-100 p-4 border-r border-gray-300">
             <div class="sticky top-0">
 
-                <h1
-                    class="text-2xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">
-                    Heading Example
-                </h1>
+                <div class="text-sm leading-6">
+                    <figure class="relative flex flex-col-reverse bg-slate-100 rounded-lg p-6">
+                        <figcaption class="flex items-center space-x-4">
+                            <img src="https://images.unsplash.com/photo-1632910121591-29e2484c0259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxjb2RlcnxlbnwwfDB8fHwxNzEwMTY0NjIzfDA&ixlib=rb-4.0.3&q=80&w=1080"
+                                alt="" class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy"
+                                decoding="async">
+                            <div class="flex-auto">
+                                <div class="text-base text-slate-900 font-semibold ">
+                                    John Doe
+                                </div>
+                                <div class="mt-0.5 ">
+                                    Web Developer
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
 
                 <article class="px-4 pb-4">
 
@@ -197,16 +210,28 @@
         </div>
         <div class="w-full md:w-1/2 bg-white p-4">
             <!-- Add your main content here -->
-            Main Content
             <div id="search-bar" class="w-120 bg-white rounded-md shadow-lg z-10">
                 <form class="flex items-center justify-center p-2">
                     <input type="text" placeholder="Search here"
                         class="w-full rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-transparent">
                     <button type="submit"
                         class="bg-gray-800 text-white rounded-md px-4 py-1 ml-2 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">
-                        Search
+
+                        <div class="flex space-x-2 items-center">
+                            <Icon name="material-symbols:add-comment-rounded" size="20"></Icon>
+                            <p>Talk</p>
+                        </div>
+                    </button>
+                    <button type="submit"
+                        class="bg-gray-800 text-white rounded-md px-4 py-1 ml-2 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">
+                        <div class="flex space-x-2 items-center">
+                            <Icon name="material-symbols:imagesmode-rounded" size="20"></Icon>
+                            <p>Image</p>
+                        </div>
+
                     </button>
                 </form>
+
             </div>
 
             <div>
@@ -237,17 +262,11 @@
                     <!-- Voting Section -->
                     <div class="flex flex-col items-center justify-start">
                         <button class="text-gray-500 hover:text-red-600 mb-1">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M3.172 8.172a4 4 0 015.656-5.656L10 1.656l1.172 1.172a4 4 0 015.656 5.656L10 16.828l-6.828-6.828z" />
-                            </svg>
+                            <Icon name="material-symbols:arrow-circle-up-outline-rounded" size="24"></Icon>
                         </button>
                         <span class="text-gray-700 font-semibold">123</span>
                         <button class="text-gray-500 hover:text-blue-600 mt-1">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M16.828 11.828a4 4 0 00-5.656 5.656L10 18.344l-1.172-1.172a4 4 0 00-5.656-5.656L10 3.172l6.828 6.828z" />
-                            </svg>
+                            <Icon name="material-symbols:arrow-circle-down-outline-rounded" size="24"></Icon>
                         </button>
                     </div>
                     <!-- Post Content -->
@@ -261,129 +280,104 @@
                             combination of these.
                         </p>
                         <div class="flex items-center space-x-4">
-                            <button class="flex items-center text-gray-500 hover:text-blue-600">
-                                <svg class="h-5 w-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M18 10c0 1.105-.895 2-2 2H8l-4 4V4c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v6z" />
-                                </svg>
+                            <button class="flex items-center text-gray-500 hover:text-blue-600 space-x-1">
+                                <Icon name="material-symbols:comment-rounded" size="20"></Icon>
                                 <span>Comments</span>
                             </button>
                             <button class="flex items-center text-gray-500 hover:text-blue-600">
-                                <svg class="h-5 w-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M4 4h12v12H4V4z" />
-                                </svg>
+                                <Icon name="material-symbols:share" size="20"></Icon>
                                 <span>Share</span>
                             </button>
                             <button class="flex items-center text-gray-500 hover:text-blue-600">
-                                <svg class="h-5 w-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M7 7h6v6H7V7z" />
-                                </svg>
+                                <Icon name="material-symbols:bookmark" size="20"></Icon>
                                 <span>Save</span>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="max-w-md mx-auto bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
-                <div class="flex items-center p-4">
-                    <div class="flex flex-col items-center">
-                        <button class="text-gray-500 hover:text-red-600">
-                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M3.172 8.172a4 4 0 015.656-5.656L10 1.656l1.172 1.172a4 4 0 015.656 5.656L10 16.828l-6.828-6.828z" />
-                            </svg>
+
+            <div class="max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-start p-4">
+                    <!-- Voting Section -->
+                    <div class="flex flex-col items-center justify-start">
+                        <button class="text-gray-500 hover:text-red-600 mb-1">
+                            <Icon name="material-symbols:arrow-circle-up-outline-rounded" size="24"></Icon>
                         </button>
-                        <span class="text-gray-700 font-medium">123</span>
-                        <button class="text-gray-500 hover:text-blue-600">
-                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M16.828 11.828a4 4 0 00-5.656 5.656L10 18.344l-1.172-1.172a4 4 0 00-5.656-5.656L10 3.172l6.828 6.828z" />
-                            </svg>
+                        <span class="text-gray-700 font-semibold">123</span>
+                        <button class="text-gray-500 hover:text-blue-600 mt-1">
+                            <Icon name="material-symbols:arrow-circle-down-outline-rounded" size="24"></Icon>
                         </button>
                     </div>
+                    <!-- Post Content -->
                     <div class="ml-4 w-full">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-semibold text-gray-900">Post Title</h3>
-                            <span class="text-sm text-gray-600">Posted by u/username</span>
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-semibold text-gray-900">Post Title</h3>
+                            <span class="text-sm text-gray-500">Posted by u/username</span>
                         </div>
-                        <p class="mt-2 text-gray-700">
+                        <p class="text-gray-700 mb-4">
                             This is a brief summary of the post content. It can be text, a link, an image, or a
                             combination of these.
                         </p>
-                        <div class="mt-4 flex items-center">
-                            <button class="text-gray-500 hover:text-blue-600 mr-2 flex items-center">
-                                <svg class="h-5 w-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M18 10c0 1.105-.895 2-2 2H8l-4 4V4c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v6z" />
-                                </svg>
+                        <div class="flex items-center space-x-4">
+                            <button class="flex items-center text-gray-500 hover:text-blue-600 space-x-1">
+                                <Icon name="material-symbols:comment-rounded" size="20"></Icon>
                                 <span>Comments</span>
                             </button>
-                            <button class="text-gray-500 hover:text-blue-600 mr-2 flex items-center">
-                                <svg class="h-5 w-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M4 4h12v12H4V4z" />
-                                </svg>
+                            <button class="flex items-center text-gray-500 hover:text-blue-600">
+                                <Icon name="material-symbols:share" size="20"></Icon>
                                 <span>Share</span>
                             </button>
-                            <button class="text-gray-500 hover:text-blue-600 flex items-center">
-                                <svg class="h-5 w-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M7 7h6v6H7V7z" />
-                                </svg>
+                            <button class="flex items-center text-gray-500 hover:text-blue-600">
+                                <Icon name="material-symbols:bookmark" size="20"></Icon>
                                 <span>Save</span>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="max-w-md mx-auto bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
-                <div class="flex items-center p-4">
-                    <div class="flex flex-col items-center">
-                        <button class="text-gray-500 hover:text-red-600">
-                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M3.172 8.172a4 4 0 015.656-5.656L10 1.656l1.172 1.172a4 4 0 015.656 5.656L10 16.828l-6.828-6.828z" />
-                            </svg>
+
+            <div class="max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-start p-4">
+                    <!-- Voting Section -->
+                    <div class="flex flex-col items-center justify-start">
+                        <button class="text-gray-500 hover:text-red-600 mb-1">
+                            <Icon name="material-symbols:arrow-circle-up-outline-rounded" size="24"></Icon>
                         </button>
-                        <span class="text-gray-700 font-medium">123</span>
-                        <button class="text-gray-500 hover:text-blue-600">
-                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M16.828 11.828a4 4 0 00-5.656 5.656L10 18.344l-1.172-1.172a4 4 0 00-5.656-5.656L10 3.172l6.828 6.828z" />
-                            </svg>
+                        <span class="text-gray-700 font-semibold">123</span>
+                        <button class="text-gray-500 hover:text-blue-600 mt-1">
+                            <Icon name="material-symbols:arrow-circle-down-outline-rounded" size="24"></Icon>
                         </button>
                     </div>
+                    <!-- Post Content -->
                     <div class="ml-4 w-full">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-semibold text-gray-900">Post Title</h3>
-                            <span class="text-sm text-gray-600">Posted by u/username</span>
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-semibold text-gray-900">Post Title</h3>
+                            <span class="text-sm text-gray-500">Posted by u/username</span>
                         </div>
-                        <p class="mt-2 text-gray-700">
+                        <p class="text-gray-700 mb-4">
                             This is a brief summary of the post content. It can be text, a link, an image, or a
                             combination of these.
                         </p>
-                        <div class="mt-4 flex items-center">
-                            <button class="text-gray-500 hover:text-blue-600 mr-2 flex items-center">
-                                <svg class="h-5 w-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M18 10c0 1.105-.895 2-2 2H8l-4 4V4c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v6z" />
-                                </svg>
+                        <div class="flex items-center space-x-4">
+                            <button class="flex items-center text-gray-500 hover:text-blue-600 space-x-1">
+                                <Icon name="material-symbols:comment-rounded" size="20"></Icon>
                                 <span>Comments</span>
                             </button>
-                            <button class="text-gray-500 hover:text-blue-600 mr-2 flex items-center">
-                                <svg class="h-5 w-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M4 4h12v12H4V4z" />
-                                </svg>
+                            <button class="flex items-center text-gray-500 hover:text-blue-600">
+                                <Icon name="material-symbols:share" size="20"></Icon>
                                 <span>Share</span>
                             </button>
-                            <button class="text-gray-500 hover:text-blue-600 flex items-center">
-                                <svg class="h-5 w-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M7 7h6v6H7V7z" />
-                                </svg>
+                            <button class="flex items-center text-gray-500 hover:text-blue-600">
+                                <Icon name="material-symbols:bookmark" size="20"></Icon>
                                 <span>Save</span>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
         <div class="w-full md:w-1/4 bg-gray-100 p-4 border-l border-gray-300">
             <div class="sticky top-0">

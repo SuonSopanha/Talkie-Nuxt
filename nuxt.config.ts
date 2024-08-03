@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   alias: {
     '@': resolve(__dirname, '/'),
   },
+  modules: [
+    'nuxt-icon',
+  ],
   css: ['~/assets/main.css'],
   postcss: {
     plugins: {
