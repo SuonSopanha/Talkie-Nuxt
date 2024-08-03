@@ -1,9 +1,9 @@
 <template>
     <div class="flex flex-wrap justify-center mx-6">
-        <div class="w-full md:w-1/4 bg-gray-100 p-4 border-r border-gray-300">
+        <div class="w-full md:w-1/4 p-4 border-r border-gray-300 flex flex-col space-y-3">
             <div class="sticky top-0">
 
-                <div class="text-sm leading-6">
+                <div class="text-sm leading-6 bg-slate-100">
                     <figure class="relative flex flex-col-reverse bg-slate-100 rounded-lg p-6">
                         <figcaption class="flex items-center space-x-4">
                             <img src="https://images.unsplash.com/photo-1632910121591-29e2484c0259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxjb2RlcnxlbnwwfDB8fHwxNzEwMTY0NjIzfDA&ixlib=rb-4.0.3&q=80&w=1080"
@@ -21,7 +21,7 @@
                     </figure>
                 </div>
 
-                <article class="px-4 pb-4">
+                <div class="px-4 pb-4 mb-4 bg-slate-100">
 
                     <ul class="flex flex-col gap-4 pl-2 mt-4">
 
@@ -96,116 +96,64 @@
 
                     </ul>
 
-                </article>
+                </div>
 
+                <div class=" bg-slate-100">
+                    <ul role="list" class="divide-y divide-gray-100 bg-slate-100 ml-2">
+                        <li class="flex items-center justify-between gap-x-6 py-2 m-2">
+                            <div class="flex min-w-0 gap-x-4 items-center">
+                                <img class="h-12 w-12 flex-none rounded-full bg-gray-50"
+                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    alt="">
+                                <div class="min-w-0 flex-auto">
+                                    <p class="text-sm font-semibold leading-6 text-gray-900">Leslie Alexander</p>
+                                </div>
+                            </div>
+                            <button type="submit"
+                                class="rounded-xl px-2 m-2 border border-gray-600 h-10">
+                                <div class="flex items-center">
+                                    <p class="text-sm">Image</p>
+                                </div>
 
-                <ul role="list" class="divide-y divide-gray-100">
-                    <li class="flex justify-between gap-x-6 py-5">
-                        <div class="flex min-w-0 gap-x-4">
-                            <img class="h-12 w-12 flex-none rounded-full bg-gray-50"
-                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                alt="">
-                            <div class="min-w-0 flex-auto">
-                                <p class="text-sm font-semibold leading-6 text-gray-900">Leslie Alexander</p>
-                                <p class="mt-1 truncate text-xs leading-5 text-gray-500">leslie.alexander@example.com
-                                </p>
-                            </div>
-                        </div>
-                        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                            <p class="text-sm leading-6 text-gray-900">Co-Founder / CEO</p>
-                            <p class="mt-1 text-xs leading-5 text-gray-500">Last seen <time
-                                    datetime="2023-01-23T13:23Z">3h ago</time></p>
-                        </div>
-                    </li>
-                    <li class="flex justify-between gap-x-6 py-5">
-                        <div class="flex min-w-0 gap-x-4">
-                            <img class="h-12 w-12 flex-none rounded-full bg-gray-50"
-                                src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                alt="">
-                            <div class="min-w-0 flex-auto">
-                                <p class="text-sm font-semibold leading-6 text-gray-900">Michael Foster</p>
-                                <p class="mt-1 truncate text-xs leading-5 text-gray-500">michael.foster@example.com</p>
-                            </div>
-                        </div>
-                        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                            <p class="text-sm leading-6 text-gray-900">Co-Founder / CTO</p>
-                            <p class="mt-1 text-xs leading-5 text-gray-500">Last seen <time
-                                    datetime="2023-01-23T13:23Z">3h ago</time></p>
-                        </div>
-                    </li>
-                    <li class="flex justify-between gap-x-6 py-5">
-                        <div class="flex min-w-0 gap-x-4">
-                            <img class="h-12 w-12 flex-none rounded-full bg-gray-50"
-                                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                alt="">
-                            <div class="min-w-0 flex-auto">
-                                <p class="text-sm font-semibold leading-6 text-gray-900">Dries Vincent</p>
-                                <p class="mt-1 truncate text-xs leading-5 text-gray-500">dries.vincent@example.com</p>
-                            </div>
-                        </div>
-                        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                            <p class="text-sm leading-6 text-gray-900">Business Relations</p>
-                            <div class="mt-1 flex items-center gap-x-1.5">
-                                <div class="flex-none rounded-full bg-emerald-500/20 p-1">
-                                    <div class="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
+                            </button>
+                        </li>
+                        <li class="flex items-center justify-between gap-x-6 py-2 m-2">
+                            <div class="flex min-w-0 gap-x-4 items-center">
+                                <img class="h-12 w-12 flex-none rounded-full bg-gray-50"
+                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    alt="">
+                                <div class="min-w-0 flex-auto">
+                                    <p class="text-sm font-semibold leading-6 text-gray-900">Leslie Alexander</p>
                                 </div>
-                                <p class="text-xs leading-5 text-gray-500">Online</p>
                             </div>
-                        </div>
-                    </li>
-                    <li class="flex justify-between gap-x-6 py-5">
-                        <div class="flex min-w-0 gap-x-4">
-                            <img class="h-12 w-12 flex-none rounded-full bg-gray-50"
-                                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                alt="">
-                            <div class="min-w-0 flex-auto">
-                                <p class="text-sm font-semibold leading-6 text-gray-900">Lindsay Walton</p>
-                                <p class="mt-1 truncate text-xs leading-5 text-gray-500">lindsay.walton@example.com</p>
-                            </div>
-                        </div>
-                        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                            <p class="text-sm leading-6 text-gray-900">Front-end Developer</p>
-                            <p class="mt-1 text-xs leading-5 text-gray-500">Last seen <time
-                                    datetime="2023-01-23T13:23Z">3h ago</time></p>
-                        </div>
-                    </li>
-                    <li class="flex justify-between gap-x-6 py-5">
-                        <div class="flex min-w-0 gap-x-4">
-                            <img class="h-12 w-12 flex-none rounded-full bg-gray-50"
-                                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                alt="">
-                            <div class="min-w-0 flex-auto">
-                                <p class="text-sm font-semibold leading-6 text-gray-900">Courtney Henry</p>
-                                <p class="mt-1 truncate text-xs leading-5 text-gray-500">courtney.henry@example.com</p>
-                            </div>
-                        </div>
-                        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                            <p class="text-sm leading-6 text-gray-900">Designer</p>
-                            <p class="mt-1 text-xs leading-5 text-gray-500">Last seen <time
-                                    datetime="2023-01-23T13:23Z">3h ago</time></p>
-                        </div>
-                    </li>
-                    <li class="flex justify-between gap-x-6 py-5">
-                        <div class="flex min-w-0 gap-x-4">
-                            <img class="h-12 w-12 flex-none rounded-full bg-gray-50"
-                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                alt="">
-                            <div class="min-w-0 flex-auto">
-                                <p class="text-sm font-semibold leading-6 text-gray-900">Tom Cook</p>
-                                <p class="mt-1 truncate text-xs leading-5 text-gray-500">tom.cook@example.com</p>
-                            </div>
-                        </div>
-                        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-                            <p class="text-sm leading-6 text-gray-900">Director of Product</p>
-                            <div class="mt-1 flex items-center gap-x-1.5">
-                                <div class="flex-none rounded-full bg-emerald-500/20 p-1">
-                                    <div class="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
+                            <button type="submit"
+                                class="rounded-xl px-2 m-2 border border-gray-600 h-10">
+                                <div class="flex items-center">
+                                    <p class="text-sm">Image</p>
                                 </div>
-                                <p class="text-xs leading-5 text-gray-500">Online</p>
+
+                            </button>
+                        </li>
+                        <li class="flex items-center justify-between gap-x-6 py-2 m-2">
+                            <div class="flex min-w-0 gap-x-4 items-center">
+                                <img class="h-12 w-12 flex-none rounded-full bg-gray-50"
+                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    alt="">
+                                <div class="min-w-0 flex-auto">
+                                    <p class="text-sm font-semibold leading-6 text-gray-900">Leslie Alexander</p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                            <button type="submit"
+                                class="rounded-xl px-2 m-2 border border-gray-600 h-10">
+                                <div class="flex items-center">
+                                    <p class="text-sm">Image</p>
+                                </div>
+
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
         <div class="w-full md:w-1/2 bg-white p-4">
