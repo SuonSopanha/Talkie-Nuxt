@@ -1,4 +1,6 @@
+<script setup lang="ts">
 
+</script>
 
 <template>
     <div class="flex flex-wrap justify-center mx-6">
@@ -187,8 +189,3 @@
         </div>
     </div>
 </template>
-
-
-<script setup lang="ts">
-
-</script>
