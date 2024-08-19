@@ -36,29 +36,65 @@
                 <!-- Step 2: Icon and Banner -->
                 <div v-if="step === 2">
                     <div>
-                        <label for="community-icon" class="block text-sm font-medium text-gray-700">Community
-                            Icon</label>
-                        <input type="file" id="community-icon" @change="handleIconUpload"
-                            class="mt-1 block w-full text-sm text-gray-900 border border-gray-300 rounded-md cursor-pointer focus:outline-none">
-                        <p class="mt-2 text-sm text-gray-500">Choose an icon for your community.</p>
-                    </div>
-                    <div>
                         <label for="community-banner" class="block text-sm font-medium text-gray-700">Community
                             Banner</label>
-                        <input type="file" id="community-banner" @change="handleBannerUpload"
-                            class="mt-1 block w-full text-sm text-gray-900 border border-gray-300 rounded-md cursor-pointer focus:outline-none">
+                        <div class="flex items-center justify-center w-full">
+                            <label for="dropzone-file"
+                                class="flex flex-col items-center justify-center w-full h-32 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 ">
+                                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                    <svg class="w-8 h-8 mb-4 text-gray-500" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                                    </svg>
+                                    <p class="mb-2 text-sm text-gray-500 "><span class="font-semibold">Click
+                                            to upload</span> or drag and drop</p>
+                                    <p class="text-xs text-gray-500">SVG, PNG, JPG or GIF (MAX. 800x400px)
+                                    </p>
+                                </div>
+                                <input id="dropzone-file" type="file" class="hidden" />
+                            </label>
+                        </div>
                         <p class="mt-2 text-sm text-gray-500">Choose a banner image for your community.</p>
                     </div>
+                    <div>
+                        <label for="community-icon" class="block text-sm font-medium text-gray-700">Community
+                            Icon</label>
+                        <div class="flex items-center justify-start w-full">
+                            <label for="dropzone-file"
+                                class="flex flex-col items-center justify-center w-24 h-24 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 ">
+                                <div class="flex flex-col items-center justify-center pt-2 pb-2">
+                                    <svg class="w-8 h-8  text-gray-500" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                                    </svg>
+                                    <p>add icon</p>
+                                </div>
+                                <input id="dropzone-file" type="file" class="hidden" />
+                            </label>
+                        </div>
+                        <p class="mt-2 text-sm text-gray-500">Choose an icon for your community.</p>
+                    </div>
+
                 </div>
 
                 <!-- Step 3: Topic -->
                 <div v-if="step === 3">
                     <div>
-                        <label for="community-topic" class="block text-sm font-medium text-gray-700">Topic</label>
-                        <input type="text" id="community-topic" v-model="form.communityTopic"
-                            class="mt-1 block w-full border border-gray-300 rounded-md p-2 shadow-sm focus:ring-teal-500 focus:border-teal-500 sm:text-sm"
-                            placeholder="e.g., Technology, Art, etc.">
-                        <p class="mt-2 text-sm text-gray-500">What is your community about?</p>
+                        <label for="community-topic" class="block text-sm font-medium text-gray-700 mb-2">Choose a
+                            Topic</label>
+                        <div class="flex flex-wrap gap-2">
+                            <button v-for="topic in topics" :key="topic" :class="{
+                                'bg-orange-500 text-white': form.communityTopic === topic,
+                                'bg-gray-700 text-white': form.communityTopic !== topic
+                            }" @click="selectTopic(topic)"
+                                class="px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
+                                {{ topic }}
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -77,15 +113,22 @@
                     </div>
                 </div>
 
-                <!-- Step 5: Rules -->
                 <div v-if="step === 5">
                     <div>
                         <label for="community-rules" class="block text-sm font-medium text-gray-700">Community
                             Rules</label>
-                        <textarea id="community-rules" v-model="form.communityRules" rows="3"
+                        <textarea id="community-rules" v-model="form.communityRules" rows="5"
                             class="mt-1 block w-full border border-gray-300 rounded-md p-2 shadow-sm focus:ring-teal-500 focus:border-teal-500 sm:text-sm"
                             placeholder="State the rules of your community"></textarea>
-                        <p class="mt-2 text-sm text-gray-500">Help members understand the do's and don'ts.</p>
+                        <p class="mt-2 text-sm text-gray-500">Help members understand the do's and don'ts. Here are some
+                            example categories you might consider:</p>
+                        <ul class="list-disc pl-5 mt-2 text-sm text-gray-500">
+                            <li><strong>Respect:</strong> Be respectful to all members.</li>
+                            <li><strong>No Spam:</strong> Avoid spamming or self-promotion.</li>
+                            <li><strong>Relevant Content:</strong> Keep posts relevant to the community's theme.</li>
+                            <li><strong>No Harassment:</strong> Harassment or hate speech is not tolerated.</li>
+                            <li><strong>Privacy:</strong> Respect the privacy of others.</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -161,7 +204,29 @@ export default {
                 communityTopic: '',
                 communityType: 'Public',
                 communityRules: ''
-            }
+            },
+            topics: [
+                'Travel & Adventure',
+                'Technology & Gadgets',
+                'Health & Wellness',
+                'Food & Cooking',
+                'Books & Literature',
+                'Music & Concerts',
+                'Sports & Fitness',
+                'Gaming & eSports',
+                'Art & Design',
+                'Science & Innovation',
+                'Personal Finance & Investing',
+                'Education & Learning',
+                'Fashion & Beauty',
+                'Lifestyle & Relationships',
+                'Movie & TV Shows',
+                'Comedy & Humor',
+                'Animals & Pets',
+                'Sports & Fitness',
+                'Business & Work',
+                'Entertainment & Music',
+            ]
         };
     },
     methods: {
