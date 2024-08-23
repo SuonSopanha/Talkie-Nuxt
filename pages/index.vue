@@ -8,10 +8,10 @@
                     the other things you enjoy.
                 </p>
                 <p class="mb-8 mt-4 px-4 leading-relaxed">Oh, and the best bit...
-                    <span class="text-[#7AB2B2] font-bold">It's free!</span>
+                    <span class="text-teal-600 font-bold">It's free!</span>
                 </p>
                 <div>
-                    <a class="inline-block py-4 px-8 leading-none text-white bg-[#4D869C] hover:bg-pink-600 rounded shadow text-sm font-bold"
+                    <a class="inline-block py-4 px-8 leading-none text-white bg-teal-600 hover:bg-teal-500 rounded shadow text-sm font-bold"
                         href="/signup">Sign-up for free</a>
                 </div>
             </div>
@@ -20,7 +20,7 @@
                     class="rounded-full w-full h-16 bg-transparent py-2 pl-8 pr-32 outline-none border-2 border-gray-100 shadow-md hover:outline-none focus:ring-teal-200 focus:border-teal-200"
                     type="text" name="query" id="query">
                 <button type="submit"
-                    class="absolute inline-flex items-center h-10 px-4 py-2 text-sm text-white transition duration-150 ease-in-out rounded-full outline-none right-3 top-3 bg-[#4D869C] sm:px-6 sm:text-base sm:font-medium hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
+                    class="absolute inline-flex items-center h-10 px-4 py-2 text-sm text-white transition duration-150 ease-in-out rounded-full outline-none right-3 top-3 bg-teal-600 sm:px-6 sm:text-base sm:font-medium hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
                     <svg class="-ml-0.5 sm:-ml-1 mr-2 w-4 h-4 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
