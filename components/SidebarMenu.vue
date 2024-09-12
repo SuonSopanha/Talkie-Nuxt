@@ -2,7 +2,7 @@
 
     <div class="sticky top-0">
 
-        <div class="text-sm leading-6 bg-slate-100">
+        <div class="text-sm leading-6 bg-slate-100 rounded-lg">
             <figure class="relative flex flex-col-reverse bg-slate-100 rounded-lg p-6">
                 <figcaption class="flex items-center space-x-4">
                     <img src="https://images.unsplash.com/photo-1632910121591-29e2484c0259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxjb2RlcnxlbnwwfDB8fHwxNzEwMTY0NjIzfDA&ixlib=rb-4.0.3&q=80&w=1080"
@@ -19,7 +19,7 @@
             </figure>
         </div>
 
-        <div class="px-6 py-4 mb-6 bg-slate-100 rounded-lg shadow-lg">
+        <div class="px-6 py-4 mb-6 bg-slate-100 rounded-lg shadow-lg mt-2">
             <ul class="flex flex-col gap-6 pl-4 mt-4">
                 <li class="flex items-center gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -30,7 +30,7 @@
                     </svg>
                     <a href="http://127.0.0.1:8000/user/dashboard"
                         class="text-lg font-medium text-gray-700 hover:text-teal-500 transition-colors duration-200">
-                        Dashboard
+                        Home
                     </a>
                 </li>
 
@@ -43,7 +43,7 @@
                     </svg>
                     <a href="http://127.0.0.1:8000/user/study-lists"
                         class="text-lg font-medium text-gray-700 hover:text-teal-500 transition-colors duration-200">
-                        Study Lists
+                        Popular
                     </a>
                 </li>
 
@@ -56,7 +56,7 @@
                     </svg>
                     <a href="http://127.0.0.1:8000/user/contribution"
                         class="text-lg font-medium text-gray-700 hover:text-teal-500 transition-colors duration-200">
-                        Your contribution
+                        Community
                     </a>
                 </li>
 

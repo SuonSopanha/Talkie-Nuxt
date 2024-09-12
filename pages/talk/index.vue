@@ -73,10 +73,10 @@
     </div>
 
         </div>
-        <div class="w-full md:w-1/4 bg-gray-100 p-4 border-l border-gray-300">
+        <div class="w-full md:w-1/4 p-4 border-l border-gray-300">
             <div class="sticky top-0">
                 <!-- Sidebar Content -->
-                <div class="relative isolate overflow-hidden text-center rounded-lg p-4">
+                <div class="relative isolate overflow-hidden bg-gray-100 text-center rounded-lg p-4">
                     <h2 class="font-bold text-xl uppercase tracking-wide sm:text-2xl">
                         Join our community now
                     </h2>
