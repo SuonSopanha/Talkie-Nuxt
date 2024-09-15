@@ -12,20 +12,12 @@
                     This guide is amazing! I learned so much about Tailwind CSS. Thanks for sharing!
                 </p>
                 <div class="flex items-center space-x-2 mt-2">
-                    <button class="text-gray-500 hover:text-blue-600 focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
+                    <button class="text-gray-500 hover:text-blue-600 focus:outline-none items-center mt-1">
+                        <Icon name="material-symbols:arrow-circle-up-outline" size="20"></Icon>
                     </button>
-                    <span class="text-sm text-gray-700">12</span>
-                    <button class="text-gray-500 hover:text-red-600 focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                        </svg>
+                    <span class="text-md text-gray-700">12</span>
+                    <button class="text-gray-500 hover:text-red-600 focus:outline-none items-center mt-1">
+                        <Icon name="material-symbols:arrow-circle-down-outline" size="20"></Icon>
                     </button>
                 </div>
                 <!-- Nested Comment -->
@@ -38,20 +30,12 @@
                             Totally agree! This guide is super helpful.
                         </p>
                         <div class="flex items-center space-x-2 mt-2">
-                            <button class="text-gray-500 hover:text-blue-600 focus:outline-none">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg>
+                            <button class="text-gray-500 hover:text-blue-600 focus:outline-none items-center mt-1">
+                                <Icon name="material-symbols:arrow-circle-up-outline" size="20"></Icon>
                             </button>
-                            <span class="text-sm text-gray-700">5</span>
-                            <button class="text-gray-500 hover:text-red-600 focus:outline-none">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                                </svg>
+                            <span class="text-md text-gray-700">12</span>
+                            <button class="text-gray-500 hover:text-red-600 focus:outline-none items-center mt-1">
+                                <Icon name="material-symbols:arrow-circle-down-outline" size="20"></Icon>
                             </button>
                         </div>
                     </div>
@@ -69,20 +53,12 @@
                     I've been using Tailwind for a while, and this guide is a great resource for beginners.
                 </p>
                 <div class="flex items-center space-x-2 mt-2">
-                    <button class="text-gray-500 hover:text-blue-600 focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
+                    <button class="text-gray-500 hover:text-blue-600 focus:outline-none items-center mt-1">
+                        <Icon name="material-symbols:arrow-circle-up-outline" size="20"></Icon>
                     </button>
-                    <span class="text-sm text-gray-700">8</span>
-                    <button class="text-gray-500 hover:text-red-600 focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                        </svg>
+                    <span class="text-md text-gray-700">12</span>
+                    <button class="text-gray-500 hover:text-red-600 focus:outline-none items-center mt-1">
+                        <Icon name="material-symbols:arrow-circle-down-outline" size="20"></Icon>
                     </button>
                 </div>
                 <!-- Nested Comment -->
@@ -95,20 +71,12 @@
                             Agreed! It's a fantastic starting point for anyone new to Tailwind.
                         </p>
                         <div class="flex items-center space-x-2 mt-2">
-                            <button class="text-gray-500 hover:text-blue-600 focus:outline-none">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg>
+                            <button class="text-gray-500 hover:text-blue-600 focus:outline-none items-center mt-1">
+                                <Icon name="material-symbols:arrow-circle-up-outline" size="20"></Icon>
                             </button>
-                            <span class="text-sm text-gray-700">3</span>
-                            <button class="text-gray-500 hover:text-red-600 focus:outline-none">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                                </svg>
+                            <span class="text-md text-gray-700">12</span>
+                            <button class="text-gray-500 hover:text-red-600 focus:outline-none items-center mt-1">
+                                <Icon name="material-symbols:arrow-circle-down-outline" size="20"></Icon>
                             </button>
                         </div>
                     </div>
